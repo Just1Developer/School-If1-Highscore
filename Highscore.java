@@ -10,7 +10,7 @@ import javafx.event.*;
  * Beschreibung
  *
  * @version 1.0 vom 08.02.2022
- * @author 
+ * @author JustOneDeveloper
  */
 
 public class Highscore extends Application {
@@ -45,7 +45,7 @@ public class Highscore extends Application {
     bHinzufuegen.setOnAction(
       (event) -> {bHinzufuegen_Action(event);} 
     );
-    bHinzufuegen.setText("Hinzufügen");
+    bHinzufuegen.setText("HinzufÃ¼gen");
     root.getChildren().add(bHinzufuegen);
     lAusgabe.setLayoutX(23);
     lAusgabe.setLayoutY(68);
@@ -92,8 +92,8 @@ public class Highscore extends Application {
   public void setAusgabe() {
     String out = "";
     for(int i = 0; i < highscores.length; i++) {
-      //Bei Verwendung von += statt = wird definiert, dass der Text out hinten angehängt wird.
-      out += ", "/*P" + (i+1) + ": "*/ + highscores[i];            //wird zu , Px: 219, erstes Komma kommt später weg
+      //Bei Verwendung von += statt = wird definiert, dass der Text out hinten angehÃ¤ngt wird.
+      out += ", "/*P" + (i+1) + ": "*/ + highscores[i];            //wird zu , Px: 219, erstes Komma kommt spÃ¤ter weg
     }
     out = out.replaceFirst(", ", "");     //Erstes Komma wegmachen
     //Ausgabe
@@ -127,7 +127,7 @@ public class Highscore extends Application {
 
   
   public void bAusgabe_Action(Event evt) {
-    // TODO hier Quelltext einfügen
+    // TODO hier Quelltext einfÃ¼gen
     
     lAusgabe.setText("");
     setAusgabe();
@@ -135,7 +135,7 @@ public class Highscore extends Application {
   } // end of bAusgabe_Action
 
   public void bHinzufuegen_Action(Event evt) {
-    // TODO hier Quelltext einfügen
+    // TODO hier Quelltext einfÃ¼gen
     
     int neu = Einlesen();
     
@@ -144,7 +144,7 @@ public class Highscore extends Application {
   } // end of bHinzufuegen_Action
 
   public void bReset_Action(Event evt) {
-    // TODO hier Quelltext einfügen
+    // TODO hier Quelltext einfÃ¼gen
     resetValues();
   } // end of bReset_Action
 
